@@ -1,0 +1,27 @@
+package ads2periodotasks;
+
+public class tasks {
+	public static void manipularString(String str) {
+		System.out.println(str.length());
+		
+		System.out.println(str.toUpperCase());
+		
+		if(str != null){
+			if(str.substring(0, 3).equalsIgnoreCase("UNI")) {
+				System.out.println("Começa com UNI");
+			} else {
+				System.out.println("Não começa com UNI");
+			}
+		} else {
+			System.out.println("Você deve inserir um valor à variavel str");
+		}
+		
+		
+	}
+	public static void main(String[] args) {
+		String str = "";
+		tasks.manipularString(str);
+
+	}
+
+}

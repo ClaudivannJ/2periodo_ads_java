@@ -1,0 +1,59 @@
+package ads2periodotasks;
+
+import java.util.Scanner;
+
+public class tasks {
+	public static void manipularString(String str) {
+		int tamanhoString;
+		char aux;
+		tamanhoString = str.length();
+		System.out.println(tamanhoString);
+		
+		System.out.println(str.toUpperCase());
+		int cont;
+		cont = 0;
+		
+		for(int i = 0; i< tamanhoString; i++) {
+			aux = str.charAt(i);
+			if(aux == 'a' || aux=='e'||aux == 'i' || aux=='o' || aux=='u') {
+				cont++;
+			}
+		}
+		System.out.println(cont);
+		
+		
+		
+		if(str.substring(0, 3).equalsIgnoreCase("UNI")) {
+			System.out.println("Sim! Começa com UNI.");
+		} else {
+			System.out.println("Não começa com UNI.");
+		}
+
+		if(str.substring(tamanhoString-3).equalsIgnoreCase("RIO")) {
+			System.out.println("Sim! A string términa com RIO.");
+		}else {
+			System.out.println("A string não términa com RIO!");
+		}
+	}
+	
+	public static void clima() {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Qual a temperátura?");
+		int temperatura = scanner.nextInt();
+		
+		if(temperatura > 30) {
+			System.out.println("Está quente!");
+		}else {
+			System.out.println("Está frio!");
+		}
+		scanner.close();
+	}
+	
+	
+	public static void main(String[] args) {
+		tasks.manipularString("uNificatóRio");
+
+	}
+
+}

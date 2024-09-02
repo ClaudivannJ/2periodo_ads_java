@@ -1,0 +1,13 @@
+package ads2periodotasks;
+
+public class tasks {
+	String str = "abc";
+	public static void task1(String str) {
+		System.out.println(str.length());
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

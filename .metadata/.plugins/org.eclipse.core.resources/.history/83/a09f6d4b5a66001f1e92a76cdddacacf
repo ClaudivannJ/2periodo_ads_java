@@ -1,0 +1,17 @@
+package ads2periodotasks;
+
+public class tasks {
+	public static void task1(String str) {
+		System.out.println(str.length());
+		
+		System.out.println(str.toUpperCase());
+		
+		
+	}
+	public static void main(String[] args) {
+		String str = "abc";
+		tasks.task1(str);
+
+	}
+
+}

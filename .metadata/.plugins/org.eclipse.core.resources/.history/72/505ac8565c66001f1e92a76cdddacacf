@@ -1,0 +1,28 @@
+package ads2periodotasks;
+
+public class tasks {
+	public static void manipularString(String str) {
+		int tamanhoString;
+		
+		tamanhoString = str.length();
+		System.out.println(tamanhoString);
+		
+		System.out.println(str.toUpperCase());
+		
+		if(str.substring(0, 3).equalsIgnoreCase("UNI")) {
+			System.out.println("Começa com UNI");
+		} else {
+			System.out.println("Não começa com UNI");
+		}
+		
+		if(str.substring((tamanhoString -3), tamanhoString).equalsIgnoreCase("UNI")) {
+			System.out.println("Sim! A string términa com RIO");
+		}
+	}
+	public static void main(String[] args) {
+		String str = "unificadorio";
+		tasks.manipularString(str);
+
+	}
+
+}
